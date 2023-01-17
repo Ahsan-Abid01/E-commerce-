@@ -1,0 +1,76 @@
+.navbar{
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    /* background-color: #fff; */
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.navbar .logo{
+   flex: 4;
+}
+.navbar .logo h2{
+    font-weight: 600;
+    letter-spacing: .5;
+ }
+ .navbar .logo h2 span{
+    font-weight: 600;
+    letter-spacing: .5;
+    font-size: 4rem;
+    color: #ffbb1f;
+ }
+.navbar .menu{
+    flex: 2;
+ }
+ .navbar .menu ul{
+   display: inline-flex;
+ }
+ .navbar .menu ul a{
+    padding: 7px 20px;
+    border-radius: 50px;
+    background-color: rgba(128, 0, 128, 0.302);
+  }
+  .navbar .menu ul .active{
+    background-color:#805ad5;
+    color: #fff;
+  }
+ .navbar .icons{
+    flex: 1;
+    display:flex;
+    justify-content: space-around;
+    width: 100px;
+
+ }
+ .navbar .icons svg{
+    font-size: 2rem;
+    cursor: pointer;
+ }
+ .cartIcon{
+    position: relative;
+    width: 30px;
+ }
+ .cartCount{
+    height: 20px;
+    width: 20px;
+    background-color: #ffbb1f;
+    color: black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    position: absolute;
+    top: -5px;
+    left: 20px;
+ }
+ @media only screen and (max-width: 600px) {
+    .navbar{
+        justify-content: center;
+        align-items: center;
+        height:200px;
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+    }
+  }
